@@ -10,14 +10,13 @@ namespace Stopwatch
             var input = Console.ReadLine();
             
             var stopwatch = new Stopwatch();
-            
+            bool isRunning = false;
+            bool isStarted = false;
+
 
             while(input.ToLower() != "exit")
-            {   
-                bool isRunning = false;
-                bool isStarted = false;
-                
-                
+            {
+
                 if (input.ToLower() == "start")
                 {
                     
@@ -38,8 +37,8 @@ namespace Stopwatch
                     if (isStarted)
                     {
                         stopwatch.Stop();
-                       // isRunning = false;
-                       // isStarted = false;         
+                        isRunning = false;
+                        // isStarted = false;         
                         input = Console.ReadLine();
 
                     }

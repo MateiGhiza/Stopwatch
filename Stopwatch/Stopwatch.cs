@@ -9,6 +9,7 @@ public class Stopwatch
     public void Start()
     {
         startTime=DateTime.Now;
+        Console.WriteLine("a");
         
     }
 
