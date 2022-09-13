@@ -9,14 +9,14 @@ public class Stopwatch
     public void Start()
     {
         startTime=DateTime.Now;
-        Console.WriteLine("a");
+        Console.WriteLine("test daca intra in start :))");
         
     }
 
-    public void Stop()
-    {
+    public void Stop() 
+    { //aici nu mai trebuie test ca daca ajunge in 'stop' ii da out la linia de mai jos pwp
         endTime=DateTime.Now;
         TimeSpan time = endTime - startTime;
-        Console.WriteLine("The following "+time+" has passed");
+        Console.WriteLine("a trecut  atata timp: " +time);
     }
 }

@@ -2,24 +2,31 @@
 
 namespace Stopwatch
 {
+    public class Ui
+    {
+        public void uI(string input)
+        {
+            //alabala
+        }  
+    }
     class Program
     {
         public static void Main(string[] args)
         {
             Console.WriteLine("start to start  ,stop to stop , exit to exit");
             var input = Console.ReadLine();
-            
+
             var stopwatch = new Stopwatch();
             bool isRunning = false;
             bool isStarted = false;
 
 
-            while(input.ToLower() != "exit")
+            while (input.ToLower() != "exit")
             {
 
                 if (input.ToLower() == "start")
                 {
-                    
+
                     if (isRunning)
                     {
                         throw new InvalidOperationException("You can't start the timer once it has been stated");
@@ -38,9 +45,8 @@ namespace Stopwatch
                     {
                         stopwatch.Stop();
                         isRunning = false;
-                        // isStarted = false;         
-                        input = Console.ReadLine();
 
+                        input = Console.ReadLine();
                     }
                     else
                     {
@@ -53,10 +59,10 @@ namespace Stopwatch
                     Console.WriteLine("ce cuvinte este astea");
                     input = Console.ReadLine();
                 }
-                
 
-                }
-            
+
+            }
+
         }
     }
 }
