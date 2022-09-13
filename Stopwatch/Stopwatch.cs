@@ -9,7 +9,7 @@ public class Stopwatch
     public void Start()
     {
         startTime=DateTime.Now;
-        Console.WriteLine("test daca intra in start :))");
+        Console.WriteLine("(test daca intra in start :x)");
         
     }
 
